@@ -1,0 +1,9 @@
+---
+- name: firest play
+  Hosts: webserver
+  Become: true
+  Tasks:
+   - Name:  Install haproxy 
+     Yum:
+       Name: haproxy
+       Dest: installed
